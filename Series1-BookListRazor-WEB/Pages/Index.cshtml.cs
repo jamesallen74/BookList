@@ -19,7 +19,6 @@ namespace Series1_BookListRazor_WEB.Pages
 
         public void OnGet()
         {
-
         }
     }
 }
