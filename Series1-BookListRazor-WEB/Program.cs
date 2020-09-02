@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+
+// TODO: Continue at https://youtu.be/C5cnZ-gZy2I?t=5926
+
 
 namespace Series1_BookListRazor_WEB
 {
