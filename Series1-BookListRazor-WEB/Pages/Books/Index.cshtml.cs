@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Series1_BookListRazor_WEB.Models;
@@ -20,6 +21,21 @@ namespace Series1_BookListRazor_WEB.Pages.Books
         public async Task OnGet()
         {
             Books = await _db.Book.ToListAsync();
+        }
+
+        public async Task<IActionResult> OnPostDelete(int ID)
+        {
+            var book = await _db.Book.FindAsync(ID);
+            if(book== null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                _db.Book.Remove(book);
+                await _db.SaveChangesAsync();
+                return RedirectToPage("Index");
+            }
         }
     }
 }
