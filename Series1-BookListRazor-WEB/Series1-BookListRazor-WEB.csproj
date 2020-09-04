@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Series1_BookListRazor_WEB</RootNamespace>
+    <UserSecretsId>c2675268-4828-4e2c-baeb-3b7ff4027bbc</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
